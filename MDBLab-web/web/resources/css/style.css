@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: "Arial";
+    font-size: 1.2em;
+}
+
+#content {
+    padding: 15px;
+    width: 85%;
+    margin: 20px auto;
+    background-color: snow;
+    box-shadow: 5px 5px 7px gray;
+}
+
+.data_table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.data_table tr th {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.data_table tr {
+    border-bottom: 1px solid gray;
+}
+
+.data_table tr td {
+    padding: 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.data_table tr:nth-child(2n) td{
+    background-color: #e3f2fc;
+}
+
+.data_table tr:hover td{
+    background-color: #96dfd1;
+}
+
+.button {
+    cursor: pointer;
+}

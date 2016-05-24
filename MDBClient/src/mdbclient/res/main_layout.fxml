@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mdbclient.controllers.WindowController">
+   <children>
+      <TextField fx:id="titleField" layoutX="80.0" layoutY="14.0" promptText="Заголовок" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></TextField>
+      <TextArea fx:id="messageTextArea" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" promptText="Ваше сообщение..." AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="sendButton" layoutX="14.0" layoutY="227.0" mnemonicParsing="false" onAction="#sendMessageHandle" text="Отправить" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>
