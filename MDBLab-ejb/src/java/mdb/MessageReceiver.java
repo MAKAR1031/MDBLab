@@ -4,9 +4,6 @@ import dao.MessagesDAO;
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.EJB;
 import javax.ejb.MessageDriven;
-import javax.inject.Inject;
-import javax.jms.JMSConnectionFactory;
-import javax.jms.JMSContext;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
@@ -21,10 +18,6 @@ public class MessageReceiver implements MessageListener {
     @EJB
     private MessagesDAO messagesDAO;
 
-    @Inject
-    @JMSConnectionFactory(value = "jms/SampleConnectionFactory")
-    private JMSContext context;
-
     @Override
     public void onMessage(Message message) {
         try {
@@ -36,5 +29,4 @@ public class MessageReceiver implements MessageListener {
             System.out.println("Произошла ошибка при обработке сообщения");
         }
     }
-
 }
